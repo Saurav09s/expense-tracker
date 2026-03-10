@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+    <defs>
+        <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0B132B" />
+            <stop offset="100%" stop-color="#1C2541" />
+        </linearGradient>
+        <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0" />
+        </linearGradient>
+
+        <linearGradient id="receipt-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="100%" stop-color="#F1F5F9" />
+        </linearGradient>
+        
+        <linearGradient id="pie-1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6366F1" />
+            <stop offset="100%" stop-color="#A855F7" />
+        </linearGradient>
+        <linearGradient id="pie-2" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#3B82F6" />
+            <stop offset="100%" stop-color="#06B6D4" />
+        </linearGradient>
+        <linearGradient id="pie-3" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#F43F5E" />
+            <stop offset="100%" stop-color="#F97316" />
+        </linearGradient>
+
+        <linearGradient id="coin-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FBBF24" />
+            <stop offset="100%" stop-color="#D97706" />
+        </linearGradient>
+        <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#10B981" />
+            <stop offset="100%" stop-color="#059669" />
+        </linearGradient>
+
+        <filter id="shadow-sm" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.25" />
+        </filter>
+        <filter id="shadow-lg" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#000" flood-opacity="0.4" />
+        </filter>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="24" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+        <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1.5" fill="#FFFFFF" opacity="0.04" />
+        </pattern>
+    </defs>
+
+    <rect x="32" y="32" width="448" height="448" rx="100" fill="url(#bg-grad)" filter="url(#shadow-lg)" />
+    <rect x="32" y="32" width="448" height="448" rx="100" fill="url(#dots)" />
+    <rect x="32" y="32" width="448" height="448" rx="100" fill="none" stroke="url(#border-glow)" stroke-width="2" />
+
+    <circle cx="256" cy="256" r="120" fill="#6366F1" filter="url(#glow)" opacity="0.25" />
+
+    <g filter="url(#shadow-sm)">
+        <path d="M 258 140 L 398 140 L 398 370 L 388 355 L 378 370 L 368 355 L 358 370 L 348 355 L 338 370 L 328 355 L 318 370 L 308 355 L 298 370 L 288 355 L 278 370 L 268 355 L 258 370 Z" fill="url(#receipt-bg)" />
+        
+        <rect x="278" y="180" width="60" height="12" rx="6" fill="#CBD5E1" />
+        <rect x="358" y="180" width="20" height="12" rx="6" fill="#94A3B8" />
+        
+        <rect x="278" y="210" width="80" height="12" rx="6" fill="#CBD5E1" />
+        <rect x="348" y="210" width="30" height="12" rx="6" fill="#94A3B8" />
+        
+        <rect x="278" y="240" width="40" height="12" rx="6" fill="#CBD5E1" />
+        <rect x="358" y="240" width="20" height="12" rx="6" fill="#94A3B8" />
+        
+        <line x1="278" y1="275" x2="378" y2="275" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="6 4" />
+        
+        <rect x="278" y="295" width="40" height="16" rx="8" fill="#94A3B8" />
+        <rect x="338" y="295" width="40" height="16" rx="8" fill="#3B82F6" />
+        
+        <g fill="#94A3B8">
+            <rect x="278" y="330" width="4" height="20" />
+            <rect x="286" y="330" width="8" height="20" />
+            <rect x="298" y="330" width="4" height="20" />
+            <rect x="306" y="330" width="12" height="20" />
+            <rect x="322" y="330" width="4" height="20" />
+            <rect x="330" y="330" width="8" height="20" />
+            <rect x="342" y="330" width="4" height="20" />
+            <rect x="350" y="330" width="12" height="20" />
+            <rect x="366" y="330" width="12" height="20" />
+        </g>
+    </g>
+
+    <g filter="url(#shadow-lg)">
+        <circle cx="198" cy="260" r="65" fill="none" stroke="#0F172A" stroke-width="40" />
+        
+        <g transform="rotate(-90 198 260)">
+            <circle cx="198" cy="260" r="65" fill="none" stroke="url(#pie-1)" stroke-width="40" stroke-dasharray="173.78 408.4" stroke-dashoffset="0" />
+            
+            <circle cx="198" cy="260" r="65" fill="none" stroke="url(#pie-2)" stroke-width="40" stroke-dasharray="112.52 408.4" stroke-dashoffset="-183.78" />
+            
+            <circle cx="198" cy="260" r="65" fill="none" stroke="url(#pie-3)" stroke-width="40" stroke-dasharray="92.1 408.4" stroke-dashoffset="-306.3" />
+        </g>
+
+        <circle cx="198" cy="260" r="45" fill="#1C2541" />
+        
+        <rect x="183" y="240" width="30" height="15" rx="3" fill="#3B82F6" />
+        
+        <path d="M 178 248 H 218 C 222 248 226 252 226 256 V 274 C 226 278 222 282 218 282 H 178 C 174 282 170 278 170 274 V 256 C 170 252 174 248 178 248 Z" fill="#F8FAFC" />
+        
+        <line x1="170" y1="262" x2="226" y2="262" stroke="#CBD5E1" stroke-width="2" />
+        <path d="M 188 248 L 193 262 H 203 L 208 248" fill="#E2E8F0" />
+        <circle cx="198" cy="268" r="2.5" fill="#94A3B8" />
+    </g>
+
+    <g filter="url(#shadow-lg)">
+        <circle cx="138" cy="150" r="22" fill="url(#coin-grad)" />
+        <circle cx="138" cy="150" r="16" fill="none" stroke="#FEF3C7" stroke-width="2" stroke-opacity="0.6" />
+        <path d="M138 138 L140 148 L150 150 L140 152 L138 162 L136 152 L126 150 L136 148 Z" fill="#FFFBEB" />
+    </g>
+
+    <g filter="url(#shadow-lg)">
+        <circle cx="398" cy="140" r="24" fill="url(#badge-grad)" />
+        <circle cx="398" cy="140" r="23" fill="none" stroke="#6EE7B7" stroke-width="1" stroke-opacity="0.5" />
+        <path d="M 390 142 L 398 134 L 406 142 M 398 134 V 152" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    </g>
+
+</svg>
