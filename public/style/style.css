@@ -152,3 +152,73 @@ table{
 .l{
     margin-bottom: 50px;
 }
+@media screen and (max-width: 714px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .header > img {
+        margin: 0;
+        position: absolute;
+        left: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 10px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer > p {
+        margin: 0;
+    }
+
+    .financeInsti {
+        margin: 0;
+    }
+
+    .vertical-line {
+        display: none; 
+    }
+
+    .social-container {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 20px 0;
+        justify-content: center;
+    }
+
+    .social-container > p {
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .Container {
+        width: 95%;
+        height: auto;
+        min-height: 350px;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+
+    .list {
+        width: 95%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .expense, select {
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
